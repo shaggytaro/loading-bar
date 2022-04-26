@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.container {
+    height:30px;
+    background-color: #ccc;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+.container .myBar {
+    position: absolute;
+    height: 100%;
+    background-color: green;
+
+  }
+
+  #loading-animation {
+    animation: progress-animation 5s forwards; 
+    /* calls our keyframe for 5s and keeps the bar filled */
+  }
+
+  @keyframes progress-animation {
+    0% {width: 0%;}
+    100% {width: 100%;}
+  }
